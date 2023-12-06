@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+  <meta charset=utf-8/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Long-Term Care</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0"></script>
+</head>
+
+<body>
+  <h1>Long-Term Care Research</h1>
+  <!-- tabs -->
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'tab1')">About</button>
+    <button class="tablinks" onclick="openTab(event, 'tab2')">Statistics in America</button>
+    <button class="tablinks" onclick="openTab(event, 'tab3')">Statistics Around the World</button>
+    <button class="tablinks" onclick="openTab(event, 'tab4')">Survey Results</button>
+    <button class="tablinks" onclick="openTab(event, 'tab5')">Resources/Links</button>
+  </div>
+  
+  <!-- About tab -->
+  <div id="tab1" class="tabcontent">
+    <h2>Background</h2>
+    <p>
+      Health care is very important to keep you and your family safe and covered throughout your life . There are many different types of health care that an 
+      individual that purchase or apply for through the government. Many people either have health insurance through their job, the government, or individual 
+      plans through private health insurance companies. Health insurance helps provide financial coverage for certain procedures, medicine, doctor visits, and
+      much more. However, one type of care that is generally not covered through a normal health insurance plan is Long-Term Care (LTC).
+      
+      Long-Term Care involves a wide variety of support service to help people live independently who needs assistance. There are different types of LTC that an 
+      individual can get but the main types are home based care, community care, adult daycare, and assisted living homes. The type of service an individual requires 
+      depend on the amount of help they need. Insurance companies will determine this by looking at 6 factors called the activities of daily life (ADLs). (See figure 1)
+      To qualify for financial assistance from your LTC plan, an indivudal must need assistance with at least 2 out of the 6 ADLs. Depending on how many they need assistance 
+      with will determine what type of care they will need. 
+    </p>
+    <img src="adl.png" alt="(Figure 1)"
+    width="400"
+    height="341"
+    title="ADL (Figure 1)" />
+
+    <h2>Different Types of LTC</h2>
+    <p>
+      There are many different LTC that an indicual can receive. The main types are home based care, adult day care, home nurses/aids,
+      and assited living homes. Home based care is when the indivudal stays or gets checked in on with family members or friends or help them 
+      with whatever ADL they need assitance for. This care is the cheapest care compared to the others but requires a lot of time from your caretaker.
+      This puts stress and puts a burden on the family to try their best to care for the indivudual. Depending on the severity of assitance that is needed,
+      this could be a good affortable option for the indivudal. The next step up is an adult day care setting. This is for indivudals who need a little more 
+      assistance and cannot be left alone during the day. This is a good option for families who work durinf the day and cannot provide 24/7 care for the indivudal.
+      Prices for this care tend to be more than home care but a lot cheaper than a full time home. Finally, the last and most common type of care is an assited living home. 
+      An indivudal could be placed in one of these homes for many different reasons but is the best type of care for an indivual who needs full 24/7 support where they can be watched 
+      and cared for all the time. This option is by far the most expensive option and could put a tremendous burden on the indivual or family financing it. However, in many cases, it is 
+      unavoidable that an indivual will need to be placed in an assisted living home. 
+    </p>
+    <h2>Why Invest in LTC for your Future?</h2>
+    <p>
+      There are many steps that need to be taken in order to decide what LTC an individual needs. 
+      The main factors come down to the severity of the assistance and the finances an indivual has.
+      In an article that surveyed individuals whether or not they know what to expect
+      in the future for LTC or if they feel ready to be able to pay for LTC, they found this, "Americans are
+      confused about how they might pay for any needed care. The source that most Americans aged
+      40 and older expect to rely heavily on to pay for ongoing living assistance is Medicare, which 57
+      percent say they will rely on quite a bit or completely." (5) While Medicare covers basic necessity
+      and other health issues, LTC is generally not covered at all under Medicare. This means a
+      majority of these individuals will lack the means to support themselves if they need any form of
+      LTC. This suggests that a big part of this issue is the lack of education about LTC. Many
+      individuals do not realize that LTC is not covered under their main health insurance plan which
+      is putting them in financial harm down the road. The first issue I want to research is looking into
+      how much Americans actually know about LTC and the different types of plans that are there. If
+      more people know about LTC coverage at an earlier age, it is easier to set up a policy for their
+      future and start financing it sooner rather than later. There is also an advantage to starting an LTC
+      plan earlier than later, as LTC plans usually are more expensive at an older age since you have a
+      higher risk of needing assistance later on in life 
+    </p>
+  </div> 
+  <!-- Statistics in America tab -->
+  <div id="tab2" class="tabcontent">
+    <img src="ltcstats.png" class="center" />
+    <h2>More Statistics</h2>
+    <ul>
+      <li>
+        <p>On average, a female will need 3.7 years of long-term care services while a male will need 2.2 years./p>On average, a female will need 3.7 years of long-term care services while a male will need 2.2 years.</p>
+      </li>
+      <li>
+        <p>20% of Americans over 65 will need long-term-care for more than 5 years.</p>
+      </li>
+      <li>
+        <p>The average American will spend $172,000 on long-term care costs (PWC).</p>
+      </li>
+      <li>
+        <p>In 2022, the annual median cost for long term care services was $94,900-$108,405 nationally.</p>
+      </li>
+      <li>
+        <p>Only 7.5 million Americans, or about 3.3% of the population, has long term care insurance.</p>
+      </li>
+      <li>
+        <p>There are over 800,000 senior Americans residing in an Assisted Living Facility.</p>
+      </li>
+      <li>
+        <p>Nearly 70% of people over 65 will need some form of LTC during their lifetime.</p>
+      </li>
+      <li>
+        <p>88% of Americans prefer home care over institutionalization.</p>
+      </li>
+      <li>
+        <p>The average annual cost of LTC insurance is $2,220 for a 55 year-old male and $3,700 for a 55 year-old female.</p>
+      </li>
+    </ul>
+  </div>
+  <!-- Overexpression tab -->
+  <div id="tab3" class="tabcontent">
+    <div>
+      <label for="country1">Select Country 1:</label>
+      <select id="country1">
+        <!-- Add options dynamically using JavaScript -->
+        <option value="Austria">Austria</option>
+        <option value="Canada">Canada</option>
+        <option value="Czechia">Czechia</option>
+        <option value="Finland">Finland</option>
+        <option value="Germany">Germany</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Italy">Italy</option>
+        <option value="Japan">Japan</option>
+        <option value="Korea">Korea</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Norway">Norway</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Slovak Republic">Slovak Republic</option>
+        <option value="Spain">Spain</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Türkiye">Turkey</option>
+        <option value="United States">United States</option>
+      </select>
+  
+      <label for="country2">Select Country 2:</label>
+      <select id="country2">
+        <!-- Add options dynamically using JavaScript -->
+        <option value="Austria">Austria</option>
+        <option value="Canada">Canada</option>
+        <option value="Czechia">Czechia</option>
+        <option value="Finland">Finland</option>
+        <option value="Germany">Germany</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Italy">Italy</option>
+        <option value="Japan">Japan</option>
+        <option value="Korea">Korea</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Norway">Norway</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Slovak Republic">Slovak Republic</option>
+        <option value="Spain">Spain</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Türkiye">Turkey</option>
+        <option value="United States">United States</option>
+      </select>
+  
+      <button id="button">Update Chart</button>
+    </div>
+  
+    <!-- Canvas to draw the line graph -->
+    <canvas id="lineChart"></canvas>
+  </div>
+  <!-- Survey Tab -->
+  <div id="tab5" class="tabcontent">
+    <div>
+      <h2>LTC Resources</h2>
+      <ul>
+        <li>
+          <a href="https://www.marketwatch.com/guides/insurance-services/long-term-care-insurance-cost-everything-you-need-to-know/#:~:text=Long%2Dterm%20care%20costs%20without%20insurance&text=Nursing%20homes%3A%20%24255%20per%20day,hourly)%20or%20%244%2C576%20per%20month">LTC Costs in America</a>
+        </li>
+        <li>
+         <a href="https://www.investopedia.com/articles/personal-finance/052014/whats-best-time-get-longterm-care-insurance.asp">When to Invest in LTC</a>
+       </li>
+       <li>
+         <a href="https://www.ltcfeds.com/long-term-care/basics">LTC Basics</a>
+       </li>
+       <li>
+          <a href="https://forltc.org/types-of-longterm-care">Different Types of LTC</a>
+       </li>
+       <li>
+          <a href="https://stats.oecd.org/index.aspx?queryid=30143#">LTC Data Around the World</a>
+        </li>
+        <li>
+          <a href="https://www.jrcinsurancegroup.com/long-term-care-statistics/">LTC Statistics in America</a>
+       </li>
+      </ul>
+      </div>
+  </div>
+
+  <!-- Survey Tab -->
+  <div id="tab4" class="tabcontent">
+    <table>
+      <tr>
+        <th>Question</th>
+        <th>Yes</th>
+        <th>No</th>
+        <th>Unsure/Maybe</th>
+      </tr>
+      <tr>
+        <td>Do you have health insurance?</td>
+        <td>96.7%</td>
+        <td>3.3%</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Do you have a LTC plan?</td>
+        <td>5.7%</td>
+        <td>56.7%</td>
+        <td>36.7%</td>
+      </tr>
+      <tr>
+        <td>Are you familiar with LTC insurance?</td>
+        <td>33.3%</td>
+        <td>66.7%</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Are you familiar with the cost associated with LTC insurance?</td>
+        <td>20%</td>
+        <td>80%</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Are you aware of different types of LTC insurance?</td>
+        <td>13.3%</td>
+        <td>73.3%</td>
+        <td>13.3%</td>
+      </tr>
+      <tr>
+        <td>Have you discussed LTC insurance with an advisor or family member?</td>
+        <td>13.3%</td>
+        <td>86.7%</td>
+        <td>0</td>
+      </tr>
+    </table>
+
+  <!-- Link to javascript file-->
+  <script src="js/d3.v6.1.1/d3.min.js"></script>
+  <script src = "script.js" type="text/javascript"></script>
+</body>
+
+</html>
